@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div id="beforeStart">
+        <h1>Programming Quiz</h1>
+        <p>The quiz consists of 10 marks</p>
+        <p>You have 3 minutes to complete</p>
+        <p>You can attempt each question only once</p>
+        <button id="startQuizBtn">Start Quiz</button>
+    </div>
+
+    <div id="quizMain" style="display: none;">
+
+        <div id="counter">
+            <div class="inner-one">
+                <h3 class="counterHeading">Timer</h3>
+                <h3 id="minutesCounter">0</h3>
+                <h3>:</h3>
+                <h3 id="secondsCounter">0</h3>
+            </div>
+
+            <div class="inner-two">
+                <h3 class="counterHeading">Your Marks</h3>
+                <h3 id="marksCounter">0</h3>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="quizHeader">
+                <h3 id="questionText"> </h3>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="opt1">
+                        <label for="" id="opt1Text"> </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="opt2">
+                        <label for="" id="opt2Text"> </label>
+                    </li>
+                    <li id="list3">
+                        <input type="radio" name="answer" id="opt3">
+                        <label for="" id="opt3Text"> </label>
+                    </li>
+                    <li id="list4">
+                        <input type="radio" name="answer" id="opt4">
+                        <label for="" id="opt4Text"> </label>
+                    </li>
+                </ul>
+
+                <button id="nextBtn"> Next Question </button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
